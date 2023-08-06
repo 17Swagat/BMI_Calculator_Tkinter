@@ -7,7 +7,7 @@ except:
 
 class App(ctk.CTk):
     def __init__(self):
-        super().__init__(fg_color=GREEN)
+        super().__init__(fg_color=PINK)#GREEN)
         self.title('')
         self.iconbitmap('empty.ico')
         self.geometry('400x400')
@@ -162,9 +162,12 @@ class HeightInput(ctk.CTkFrame):
         self.metric_bool = metric_bool
 
         # widgets
-        slider = ctk.CTkSlider(self, button_color=GREEN,
+        slider = ctk.CTkSlider(self, 
+                               button_color=PINK,#GREEN,
                                command=self.update_text, 
-                               button_hover_color=GRAY, progress_color=GREEN, fg_color=GRAY,
+                               button_hover_color=GRAY, 
+                               progress_color=PINK,#GREEN, 
+                               fg_color=GRAY,
                                variable=height_int, from_=100, to= 250)
         slider.pack(side='left', fill='x', expand=True, padx=20)
 
